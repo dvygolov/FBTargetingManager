@@ -1,28 +1,28 @@
 {
   "app": "FBTargetingManager",
-  "build": "161026b5",
-  "version": "161026b5",
-  "generatedAt": "2026-10-16T13:53:06.801Z",
+  "build": "161026b6",
+  "version": "161026b6",
+  "generatedAt": "2026-10-16T14:54:00.144Z",
   "payload": {
     "encoding": "base64",
-    "sha256": "e787f11b9736a0f3d42fe22731ae4e824d1e797690bde42ee739f3407cf1811d",
-    "byteLength": 25034
+    "sha256": "4b1c80987830766b253a7e70ba003dd9afd34aab66088352083c29f09150ee40",
+    "byteLength": 25236
   },
   "chunks": [
     {
       "index": 1,
       "file": "og/chunk-001.html",
-      "url": "https://fbtargetingmanager.pages.dev/targeting/161026b5/og/chunk-001.html",
+      "url": "https://fbtargetingmanager.pages.dev/targeting/161026b6/og/chunk-001.html",
       "latestUrl": "https://fbtargetingmanager.pages.dev/targeting/latest/og/chunk-001.html",
       "ogObjectId": "",
-      "base64Length": 33380,
-      "base64Sha256": "e6981d8d2c7f9132e859d73762e6f8bdbd7c9e08e658c373afbd971bbacc3af1"
+      "base64Length": 33648,
+      "base64Sha256": "e784d3e325ee9f983bd7021a709672da07bbe26656884e39c1aca977f3bb7055"
     }
   ],
   "source": "targeting-manager.js",
   "chunkSize": 350000,
   "payloadFile": "payload.js",
   "manifestFile": "manifest.html",
-  "manifestUrl": "https://fbtargetingmanager.pages.dev/targeting/161026b5/manifest.html",
+  "manifestUrl": "https://fbtargetingmanager.pages.dev/targeting/161026b6/manifest.html",
   "latestManifestUrl": "https://fbtargetingmanager.pages.dev/targeting/latest/manifest.html"
 }

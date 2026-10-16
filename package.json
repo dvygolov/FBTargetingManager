@@ -1,6 +1,6 @@
 {
   "name": "fbtargetingmanager",
-  "version": "161026b5",
+  "version": "161026b6",
   "private": true,
   "description": "Browser-side Facebook Ads Manager account-level targeting manager: age, geo and placement restrictions across all ad accounts.",
   "scripts": {
