@@ -27,8 +27,8 @@ jobs:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       FB_GRAPH_SCRAPE_TOKEN: ${{ secrets.FB_GRAPH_SCRAPE_TOKEN }}
-      CLOUDFLARE_PROJECT_NAME: columnsmanager
-      LATEST_ROOT: dist/columns/latest
+      CLOUDFLARE_PROJECT_NAME: fbtargetingmanager
+      LATEST_ROOT: dist/targeting/latest
     steps:
       - uses: actions/checkout@v4
         with:
