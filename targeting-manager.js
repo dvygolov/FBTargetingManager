@@ -255,7 +255,8 @@
   .fbac-iconbtn:hover{background:#f0f2f5}
   .fbac-editbtn{padding:7px 12px;border:0;border-radius:8px;background:#1877f2;color:#fff;font-weight:600;cursor:pointer;font-size:12.5px}
   .fbac-editbtn.on{background:#1c2b3a}
-  .fbac-scroll{overflow:auto;flex:1;min-height:0}
+  .fbac-scroll{overflow:auto;flex:1 1 auto;min-height:0;max-height:min(62vh,640px)}
+  .fbac-panel.editing .fbac-scroll{max-height:min(44vh,330px)}
   table.fbac{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed}
   table.fbac th,table.fbac td{padding:7px 8px;border-bottom:1px solid #eef0f3;text-align:left;vertical-align:middle;overflow:hidden}
   table.fbac th{position:sticky;top:0;background:#f5f6f7;z-index:1;font-weight:600;white-space:nowrap}
@@ -543,6 +544,8 @@
       const on = editWrap.style.display === "none";
       editWrap.style.display = on ? "block" : "none";
       this.className = "fbac-editbtn" + (on ? " on" : "");
+      const panel = this.closest(".fbac-panel");
+      if (panel) panel.classList.toggle("editing", on);
     } }, [t("edit") + " (0)"]);
 
     const langBox = h("div", { class: "fbac-langs" }, [
