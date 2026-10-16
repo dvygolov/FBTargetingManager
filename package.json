@@ -1,0 +1,21 @@
+{
+  "name": "fbtargetingmanager",
+  "version": "161026b2",
+  "private": true,
+  "description": "Browser-side Facebook Ads Manager account-level targeting manager: age, geo and placement restrictions across all ad accounts.",
+  "scripts": {
+    "bump:build": "node scripts/bump-build-version.cjs",
+    "prebuild": "npm run bump:build",
+    "check": "node --check targeting-og-packager.js && node --check targeting-manager.js && node --check targeting-loader.js",
+    "build": "node targeting-og-packager.js --base-url=https://fbtargetingmanager.pages.dev/targeting",
+    "deploy": "npx wrangler pages deploy ./dist --project-name=fbtargetingmanager --branch=main --commit-dirty=true"
+  },
+  "keywords": [
+    "facebook",
+    "bookmarklet",
+    "yellow-web"
+  ],
+  "author": "Yellow Web",
+  "license": "UNLICENSED",
+  "devDependencies": {}
+}
