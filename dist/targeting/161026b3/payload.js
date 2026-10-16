@@ -16,7 +16,7 @@
   "use strict";
   const V = "v22.0";
   const GRAPH = "https://graph.facebook.com/" + V;
-  const Config = { APP: "FBTargetingManager", VERSION: "161026b2" }; // VERSION = ДДММГГbN
+  const Config = { APP: "FBTargetingManager", VERSION: "161026b3" }; // VERSION = ДДММГГbN
 
   const PLACEMENTS = [
     { id: "audience_network_classic", code: "AN", name: "Audience Network native, banner, interstitial" },
