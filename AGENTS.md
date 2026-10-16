@@ -17,6 +17,13 @@
   - every `https://fbtargetingmanager.pages.dev/targeting/latest/og/chunk-*.html`
 - Use a real Graph API POST scrape request, not Meta Sharing Debugger in a browser.
 
+## Facebook OG scrape token
+
+- `FB_GRAPH_SCRAPE_TOKEN` is a Facebook **app access token**, not a user/system token: it is `app_id|app_secret` (e.g. `6628568379|c1e620...`). The scrape endpoint `graph.facebook.com/v23.0/?id=<url>&scrape=true&fields=og_object` accepts it, and it does not expire like a user token.
+- Use a real Graph POST scrape request, not Meta Sharing Debugger in a browser.
+- Credentials live in KeePass under `/Cloudflare/Facebook OG Scrape Token` (username = app id, password = app secret; the token is `username|password`).
+- The same value is reused by every YellowWebHub tool repo. Reuse it; do not mint per-tool tokens.
+
 ## Hygiene
 
 - Run `npm run check` before `npm run build`.
