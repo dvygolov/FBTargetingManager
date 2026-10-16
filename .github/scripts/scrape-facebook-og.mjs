@@ -61,7 +61,7 @@ function sleep(ms) {
 }
 
 async function verifyTarget(target) {
-  const maxAttempts = 8;
+  const maxAttempts = 20;
   const delayMs = 5000;
   let lastTitle = "";
 
